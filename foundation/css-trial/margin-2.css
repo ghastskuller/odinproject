@@ -1,0 +1,37 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  font: Roboto;
+}
+.box {
+  border: 2px solid black;
+  width: 50%;
+  margin: auto;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.inner-box1 {
+  background: AliceBlue;
+  margin: 3px;
+}
+.inner-box2 {
+  background: AliceBlue;
+  margin: 3px;
+}
+.inner-box3 {
+  background: AliceBlue;
+  margin: 3px;
+  text-align: center;
+}
+
+p {
+  margin: 0px;
+}
+
+button {
+  display: block;
+  background: white;
+  border: 0.1px solid grey;
+  margin: 0 auto;
+}
