@@ -7,41 +7,90 @@
     <title>Margin and Padding exercise</title>
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
-    
-        <body>
-        
-        <div id="navbar">
-          <a class="active" href="javascript:void(0)">Home</a>
-          <a href="javascript:void(0)">News</a>
-          <a href="javascript:void(0)">Contact</a>
+    <nav id="navbar">
+      <div class="left-side">Header Logo</div>
+      <div class="right-side">
+        <a class="active" href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)">News</a>
+        <a href="javascript:void(0)">Contact</a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="content-body" id="aboutMe">
+        <div class="container">
+          <div class="inner-container">
+            <div class="greetings">Welcome to the Hakurei Shrine</div>
+            <div class="description">
+              Home of Touhou Project's protagonist, Reimu Hakurei. The shrine
+              and its maiden serves to protect the land of Gensōkyō from the
+              outside world by maintaining the Great Hakurei Barrier and
+              exterminating yōkai. Donations are greatly appreciated!
+            </div>
+            <div class="donateNowContainer">
+              <a
+                class="donateNow"
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                >Donate Now!</a
+              >
+            </div>
+          </div>
+          <div class="inner-container">
+            <img class="layer1Image" src="81531523_p0_master1200.jpg" />
+          </div>
         </div>
-        
-        <div class="content">
-          <h3>Sticky Navigation Example</h3>
-          <p>The navbar will stick to the top when you reach its scroll position.</p>
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      </div>
+      <div class="content-body" id="information">
+        <div class="title">Information!</div>
+        <div class="information-container">
+          <div class="info">
+            <img
+              src="https://raw.githubusercontent.com/TheOdinProject/css-exercises/main/flex/04-flex-information/images/barberry.png"
+              alt="barberry"
+              class="information-img"
+            />
+            <div class="text">This is a type of plant. We love this one.</div>
+          </div>
+
+          <div class="info">
+            <img
+              src="https://raw.githubusercontent.com/TheOdinProject/css-exercises/main/flex/04-flex-information/images/chilli.png"
+              alt="chili"
+              class="information-img"
+            />
+            <div class="text">
+              This is another type of plant. Isn't it nice?
+            </div>
+          </div>
+
+          <div class="info">
+            <img
+              src="https://raw.githubusercontent.com/TheOdinProject/css-exercises/main/flex/04-flex-information/images/pepper.png"
+              alt="pepper"
+              class="information-img"
+            />
+            <div class="text">We have so many plants. Yay plants.</div>
+          </div>
+
+          <div class="info">
+            <img
+              src="https://raw.githubusercontent.com/TheOdinProject/css-exercises/main/flex/04-flex-information/images/saffron.png"
+              alt="saffron"
+              class="information-img"
+            />
+            <div class="text">
+              I'm running out of things to say about plants.
+            </div>
+          </div>
         </div>
-        
-        <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-        </script>
+      </div>
+      <div class="content-body" id="quote">
+        <div class="layer3Quote">"My god, jelly donuts are so scary."</div>
+        <div class="layer3QuoteFrom">-Fujiwara no Mokou</div>
+      </div>
+      <footer>Copyright © The Odin Project 2021</footer>
+    </div>
   </body>
 </html>
